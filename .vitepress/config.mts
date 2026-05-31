@@ -1,15 +1,18 @@
 import { defineConfig } from 'vitepress'
 
+const base = process.env.VITEPRESS_BASE || '/tapiz-docs/'
+
 export default defineConfig({
   title: 'Tapiz Docs',
   description: 'Unified documentation portal for Tapiz API docs and user manual',
   cleanUrls: true,
+  base,
   appearance: false,
   markdown: { html: true },
   lastUpdated: true,
   ignoreDeadLinks: false,
   themeConfig: {
-    logo: '/logo.svg',
+    logo: `${base}logo.svg`,
     search: { provider: 'local' },
     nav: [
       { text: 'Home', link: '/' },

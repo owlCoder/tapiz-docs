@@ -76,3 +76,14 @@ npm run check:links
 3. Keep technical pages free from secrets, private source-code snippets and environment values.
 4. Update navigation when adding a new page.
 5. Run link checks before opening a pull request.
+
+## GitHub Pages deployment
+
+This repository is configured for GitHub Pages under the `/tapiz-docs/` base path.
+
+If the repository name changes, update both:
+
+- `.vitepress/config.mts` default `base` value
+- `.github/workflows/pages.yml` `VITEPRESS_BASE` value
+
+For a user or organization site repository such as `username.github.io`, use `/` instead.
