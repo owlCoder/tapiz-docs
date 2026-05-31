@@ -1,0 +1,18 @@
+<svg
+  width="128"
+  height="128"
+  viewBox="0 0 32 32"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+
+<rect width="32" height="32" rx="8" fill="#1496b3" />
+    <path d="M5 9 L5 5 L9 5" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="square" />
+    <path d="M23 5 L27 5 L27 9" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="square" />
+    <path d="M5 23 L5 27 L9 27" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="square" />
+    <path d="M23 27 L27 27 L27 23" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="square" className="opacity-50" />
+
+    <g fill="#FFFFFF">
+      <rect x="15" y="10" width="2" height="14" />
+      <rect x="10" y="10" width="12" height="2" />
+    </g>
+  </svg>

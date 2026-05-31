@@ -1,52 +1,78 @@
-# Tapiz Documentation
+# Tapiz Docs Portal
 
-> **Tapiz** is an attendance tracking and academic management platform for university courses. It consists of two repositories: a REST API backend and a React/TypeScript frontend.
+Unified documentation portal for the Tapiz platform.
 
----
+This repository combines two clearly separated documentation areas:
 
-## Repositories
+- **API Docs** for technical teams, integrators and maintainers.
+- **User Manual** for students, assistants, faculty managers and super administrators.
 
-| Repo | Description | Tech Stack |
-|------|-------------|------------|
-| [`tapiz-rest-api`](./api/README.md) | Backend REST API | Node.js, Hono, TypeORM, PostgreSQL |
-| [`tapiz-reactjs-ui`](./ui/README.md) | Frontend client | React 19, Vite, Tailwind CSS v4 |
+The portal is built with VitePress and styled to visually align with the Tapiz React application: dark grid surfaces, electric cyan accents, square cards, technical typography and a two-card landing page.
 
----
+## Documentation areas
 
-## Platform Overview
+| Area | Audience | Purpose |
+|---|---|---|
+| API Docs | Developers and integrators | REST API reference, authentication guidance, architecture overview and operations documentation. |
+| User Manual | End users and support teams | Role-based workflows and product usage guidance written in plain English. |
 
-Tapiz supports two user roles:
+## Privacy and disclosure rules
 
-- **Assistant** — manages subjects, sessions, score sheets, forms, and reports; generates QR codes for attendance
-- **Student** — scans QR codes to record attendance, views grades, score sheets, and calendar
+This repository must not expose private implementation details.
 
-### Core Features
+Do not publish:
 
-- QR-code based attendance scanning with configurable expiry
-- Session management (lectures, lab exercises, computer exercises, auditory exercises)
-- Analytics dashboard with heatmaps, trend charts, and cumulative attendance graphs
-- Score sheets with formula support (SUM, IF, column references)
-- Version history for score sheets (full snapshots + diffs)
-- Custom form builder with public token-based access
-- 2FA via email for both roles
-- PDF and Excel report export via Vercel microservices
-- Absence threshold notifications per subject
+- real `.env` files or copied environment examples
+- secret values, secret names, credentials or internal URLs
+- source-code snippets that expose private implementation details
+- private infrastructure details
+- personal data or production data
 
----
+Configuration should be documented only at a conceptual level. See `reference/configuration.md`.
 
-## Getting Started
+## Repository structure
 
-1. **Set up the API** → [api/README.md](./api/README.md)
-2. **Set up the UI** → [ui/README.md](./ui/README.md)
-3. **API Reference** → [api/API_REFERENCE.md](./api/API_REFERENCE.md)
-4. **Database schema** → [api/DATABASE.md](./api/DATABASE.md)
-5. **Architecture** → [api/ARCHITECTURE.md](./api/ARCHITECTURE.md)
+```text
+.
+├── .vitepress/              # VitePress configuration and custom theme
+├── api/                     # API documentation
+├── architecture/            # Technical architecture documentation
+├── guide/                   # Technical onboarding guides
+├── manual/                  # Role-based user manual
+├── operations/              # Operational guides and runbooks
+├── reference/               # Glossary, configuration policy and ADR links
+├── public/                  # Static assets, including the Tapiz logo
+├── scripts/                 # Documentation maintenance scripts
+├── index.md                 # Landing page with API Docs and User Manual cards
+├── README.md                # Repository overview
+├── CONTRIBUTING.md          # Contribution rules
+├── CHANGELOG.md             # Documentation changelog
+└── package.json             # Docs tooling
+```
 
----
+## Quick start
 
-## Quick Links
+```bash
+npm install
+npm run dev
+```
 
-- [Environment Variables — API](./api/README.md#environment-variables)
-- [Environment Variables — UI](./ui/README.md#environment-variables)
-- [Authentication Flow](./api/API_REFERENCE.md#authentication)
-- [Roles & Permissions](./api/API_REFERENCE.md#roles--permissions)
+## Build
+
+```bash
+npm run build
+```
+
+## Validate links
+
+```bash
+npm run check:links
+```
+
+## Documentation workflow
+
+1. Decide whether the change belongs to **API Docs** or **User Manual**.
+2. Keep user-facing pages free from technical implementation details.
+3. Keep technical pages free from secrets, private source-code snippets and environment values.
+4. Update navigation when adding a new page.
+5. Run link checks before opening a pull request.

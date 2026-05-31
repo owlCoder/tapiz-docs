@@ -1,0 +1,17 @@
+{
+  "name": "tapiz-docs",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev .",
+    "build": "vitepress build .",
+    "preview": "vitepress preview .",
+    "lint:links": "node scripts/check-links.mjs",
+    "generate:routes": "node scripts/extract-routes.mjs ../tapiz-rest-api"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3",
+    "markdownlint-cli2": "^0.18.1"
+  }
+}

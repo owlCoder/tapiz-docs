@@ -1,0 +1,2146 @@
+[
+  {
+    "method": "GET",
+    "path": "/api/admin/assistants",
+    "auth": "super_admin",
+    "source": "admin/adminRoutes.ts",
+    "summary": "List admin — assistants",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/assistants/:id",
+    "auth": "super_admin",
+    "source": "admin/adminRoutes.ts",
+    "summary": "Get admin — assistants id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/admin/assistants/:id/activate",
+    "auth": "super_admin",
+    "source": "admin/adminRoutes.ts",
+    "summary": "Update admin — assistants id activate",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/admin/assistants/:id/institution",
+    "auth": "super_admin",
+    "source": "admin/adminRoutes.ts",
+    "summary": "Update admin — assistants id institution",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/faculties",
+    "auth": "super_admin",
+    "source": "admin/adminUniversityRoutes.ts",
+    "summary": "List admin — faculties",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/faculties/:facId/managers",
+    "auth": "super_admin",
+    "source": "admin/adminRoutes.ts",
+    "summary": "List admin — faculties facId managers",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/admin/faculties/:id/logo",
+    "auth": "super_admin",
+    "source": "admin/adminRoutes.ts",
+    "summary": "Delete admin — faculties id logo",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/admin/faculties/:id/logo",
+    "auth": "super_admin",
+    "source": "admin/adminRoutes.ts",
+    "summary": "Create / execute admin — faculties id logo",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/faculty-managers",
+    "auth": "super_admin",
+    "source": "admin/adminRoutes.ts",
+    "summary": "List admin — faculty managers",
+    "handler": "getAllFacultyManagers"
+  },
+  {
+    "method": "POST",
+    "path": "/api/admin/faculty-managers",
+    "auth": "super_admin",
+    "source": "admin/adminRoutes.ts",
+    "summary": "Create / execute admin — faculty managers",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/admin/faculty-managers/:id",
+    "auth": "super_admin",
+    "source": "admin/adminRoutes.ts",
+    "summary": "Delete admin — faculty managers id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/admin/faculty-managers/:id",
+    "auth": "super_admin",
+    "source": "admin/adminRoutes.ts",
+    "summary": "Update admin — faculty managers id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/admin/faculty-managers/:id/activate",
+    "auth": "super_admin",
+    "source": "admin/adminRoutes.ts",
+    "summary": "Update admin — faculty managers id activate",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/admin/faculty-managers/:id/reset-password",
+    "auth": "super_admin",
+    "source": "admin/adminRoutes.ts",
+    "summary": "Create / execute admin — faculty managers id reset password",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/students",
+    "auth": "super_admin",
+    "source": "admin/adminRoutes.ts",
+    "summary": "List admin — students",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/admin/students/:id/activate",
+    "auth": "super_admin",
+    "source": "admin/adminRoutes.ts",
+    "summary": "Update admin — students id activate",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/admin/students/:id/faculty",
+    "auth": "super_admin",
+    "source": "admin/adminRoutes.ts",
+    "summary": "Update admin — students id faculty",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/universities",
+    "auth": "super_admin",
+    "source": "admin/adminUniversityRoutes.ts",
+    "summary": "List admin — universities",
+    "handler": "getAllUniversities"
+  },
+  {
+    "method": "POST",
+    "path": "/api/admin/universities",
+    "auth": "super_admin",
+    "source": "admin/adminUniversityRoutes.ts",
+    "summary": "Create / execute admin — universities",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/admin/universities/:id",
+    "auth": "super_admin",
+    "source": "admin/adminUniversityRoutes.ts",
+    "summary": "Delete admin — universities id",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/universities/:id",
+    "auth": "super_admin",
+    "source": "admin/adminUniversityRoutes.ts",
+    "summary": "Get admin — universities id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/admin/universities/:id",
+    "auth": "super_admin",
+    "source": "admin/adminUniversityRoutes.ts",
+    "summary": "Update admin — universities id",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/assistants",
+    "auth": "assistant",
+    "source": "assistant/assistantRoutes.ts",
+    "summary": "List assistants",
+    "handler": "getAll"
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/assistants/me/institution",
+    "auth": "assistant",
+    "source": "assistant/assistantRoutes.ts",
+    "summary": "Update assistants — me institution",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/attendance/:id",
+    "auth": "assistant",
+    "source": "attendance/attendanceRoutes.ts",
+    "summary": "Delete attendance — id",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/attendance/all",
+    "auth": "assistant",
+    "source": "attendance/attendanceRoutes.ts",
+    "summary": "List attendance — all",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/attendance/flush",
+    "auth": "public",
+    "source": "attendance/attendanceRoutes.ts",
+    "summary": "Create / execute attendance — flush",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/attendance/manual",
+    "auth": "assistant",
+    "source": "attendance/attendanceRoutes.ts",
+    "summary": "Create / execute attendance — manual",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/attendance/manual-bulk",
+    "auth": "assistant",
+    "source": "attendance/attendanceRoutes.ts",
+    "summary": "Create / execute attendance — manual bulk",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/attendance/matrix",
+    "auth": "assistant",
+    "source": "attendance/attendanceRoutes.ts",
+    "summary": "List attendance — matrix",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/attendance/my",
+    "auth": "student",
+    "source": "attendance/attendanceRoutes.ts",
+    "summary": "List attendance — my",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/attendance/scan",
+    "auth": "student",
+    "source": "attendance/attendanceRoutes.ts",
+    "summary": "Create / execute attendance — scan",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/attendance/stats",
+    "auth": "assistant",
+    "source": "attendance/attendanceRoutes.ts",
+    "summary": "List attendance — stats",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/attendance/student-stats",
+    "auth": "assistant",
+    "source": "attendance/attendanceRoutes.ts",
+    "summary": "List attendance — student stats",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/audit",
+    "auth": "super_admin",
+    "source": "audit/auditRoutes.ts",
+    "summary": "List audit",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/audit/my-faculty",
+    "auth": "faculty_manager",
+    "source": "audit/auditRoutes.ts",
+    "summary": "List audit — my faculty",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/auth/2fa-status",
+    "auth": "authenticated",
+    "source": "auth/authRoutes.ts",
+    "summary": "List auth — 2fa status",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/2fa/totp/confirm",
+    "auth": "authenticated",
+    "source": "auth/authTotpRoutes.ts",
+    "summary": "Create / execute auth — 2fa totp confirm",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/2fa/totp/init",
+    "auth": "authenticated",
+    "source": "auth/authTotpRoutes.ts",
+    "summary": "Create / execute auth — 2fa totp init",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/auth/admin-profile",
+    "auth": "super_admin",
+    "source": "auth/authRoutes.ts",
+    "summary": "List auth — admin profile",
+    "handler": "getAdminProfile"
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/admin/totp/confirm",
+    "auth": "public",
+    "source": "auth/authTotpRoutes.ts",
+    "summary": "Create / execute auth — admin totp confirm",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/admin/totp/init",
+    "auth": "public",
+    "source": "auth/authTotpRoutes.ts",
+    "summary": "Create / execute auth — admin totp init",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/auth/approve-student/:id",
+    "auth": "authenticated",
+    "source": "auth/authRoutes.ts",
+    "summary": "Update auth — approve student id",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/auth/assistant-profile",
+    "auth": "assistant",
+    "source": "auth/authRoutes.ts",
+    "summary": "List auth — assistant profile",
+    "handler": "getAssistantProfile"
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/auth/assistant-profile",
+    "auth": "assistant",
+    "source": "auth/authRoutes.ts",
+    "summary": "Update auth — assistant profile",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/change-password",
+    "auth": "student",
+    "source": "auth/authRoutes.ts",
+    "summary": "Create / execute auth — change password",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/change-password-assistant",
+    "auth": "assistant",
+    "source": "auth/authRoutes.ts",
+    "summary": "Create / execute auth — change password assistant",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/confirm-password-reset",
+    "auth": "public",
+    "source": "auth/authRoutes.ts",
+    "summary": "Create / execute auth — confirm password reset",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/deactivate-account",
+    "auth": "assistant",
+    "source": "auth/authRoutes.ts",
+    "summary": "Create / execute auth — deactivate account",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/deactivate-student-account",
+    "auth": "student",
+    "source": "auth/authRoutes.ts",
+    "summary": "Create / execute auth — deactivate student account",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/login",
+    "auth": "public",
+    "source": "auth/authRoutes.ts",
+    "summary": "Create / execute auth — login",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/qr/confirm",
+    "auth": "authenticated",
+    "source": "auth/authTotpRoutes.ts",
+    "summary": "Create / execute auth — qr confirm",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/qr/generate",
+    "auth": "public",
+    "source": "auth/authTotpRoutes.ts",
+    "summary": "Create / execute auth — qr generate",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/auth/qr/poll/:token",
+    "auth": "public",
+    "source": "auth/authTotpRoutes.ts",
+    "summary": "Get auth — qr poll token",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/refresh",
+    "auth": "authenticated",
+    "source": "auth/authRoutes.ts",
+    "summary": "Create / execute auth — refresh",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/register",
+    "auth": "public",
+    "source": "auth/authRoutes.ts",
+    "summary": "Create / execute auth — register",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/request-password-reset",
+    "auth": "public",
+    "source": "auth/authRoutes.ts",
+    "summary": "Create / execute auth — request password reset",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/reset-student-password",
+    "auth": "assistant",
+    "source": "auth/authRoutes.ts",
+    "summary": "Create / execute auth — reset student password",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/auth/student-profile",
+    "auth": "student",
+    "source": "auth/authRoutes.ts",
+    "summary": "List auth — student profile",
+    "handler": "getStudentProfile"
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/auth/student-profile",
+    "auth": "student",
+    "source": "auth/authRoutes.ts",
+    "summary": "Update auth — student profile",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/toggle-2fa",
+    "auth": "authenticated",
+    "source": "auth/authRoutes.ts",
+    "summary": "Create / execute auth — toggle 2fa",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/verify-2fa",
+    "auth": "public",
+    "source": "auth/authRoutes.ts",
+    "summary": "Create / execute auth — verify 2fa",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/faculty-manager/assistants",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmAssistantRoutes.ts",
+    "summary": "List faculty manager — assistants",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/faculty-manager/assistants",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmAssistantRoutes.ts",
+    "summary": "Create / execute faculty manager — assistants",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/faculty-manager/assistants/:id",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmAssistantRoutes.ts",
+    "summary": "Get faculty manager — assistants id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/faculty-manager/assistants/:id",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmAssistantRoutes.ts",
+    "summary": "Update faculty manager — assistants id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/faculty-manager/assistants/:id/activate",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmAssistantRoutes.ts",
+    "summary": "Update faculty manager — assistants id activate",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/faculty-manager/chairs",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmDepartmentRoutes.ts",
+    "summary": "Create / execute faculty manager — chairs",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/faculty-manager/chairs/:id",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmDepartmentRoutes.ts",
+    "summary": "Delete faculty manager — chairs id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/faculty-manager/chairs/:id",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmDepartmentRoutes.ts",
+    "summary": "Update faculty manager — chairs id",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/faculty-manager/chairs/:id/assign-assistant",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmDepartmentRoutes.ts",
+    "summary": "Create / execute faculty manager — chairs id assign assistant",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/faculty-manager/chairs/:id/unassign-assistant",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmDepartmentRoutes.ts",
+    "summary": "Create / execute faculty manager — chairs id unassign assistant",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/faculty-manager/departments",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmDepartmentRoutes.ts",
+    "summary": "List faculty manager — departments",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/faculty-manager/departments",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmDepartmentRoutes.ts",
+    "summary": "Create / execute faculty manager — departments",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/faculty-manager/departments/:deptId/chairs",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmDepartmentRoutes.ts",
+    "summary": "List faculty manager — departments deptId chairs",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/faculty-manager/departments/:id",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmDepartmentRoutes.ts",
+    "summary": "Delete faculty manager — departments id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/faculty-manager/departments/:id",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmDepartmentRoutes.ts",
+    "summary": "Update faculty manager — departments id",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/faculty-manager/me",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/facultyManagerRoutes.ts",
+    "summary": "List faculty manager — me",
+    "handler": "getProfile"
+  },
+  {
+    "method": "GET",
+    "path": "/api/faculty-manager/students",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmStudentRoutes.ts",
+    "summary": "List faculty manager — students",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/faculty-manager/students/:id",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmStudentRoutes.ts",
+    "summary": "Get faculty manager — students id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/faculty-manager/students/:id/activate",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmStudentRoutes.ts",
+    "summary": "Update faculty manager — students id activate",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/faculty-manager/students/:id/approve",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmStudentRoutes.ts",
+    "summary": "Update faculty manager — students id approve",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/faculty-manager/students/pending",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmStudentRoutes.ts",
+    "summary": "List faculty manager — students pending",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/faculty-manager/study-programs",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmStudyProgramRoutes.ts",
+    "summary": "List faculty manager — study programs",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/faculty-manager/study-programs",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmStudyProgramRoutes.ts",
+    "summary": "Create / execute faculty manager — study programs",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/faculty-manager/study-programs/:id/activate",
+    "auth": "faculty_manager",
+    "source": "faculty-manager/fmStudyProgramRoutes.ts",
+    "summary": "Update faculty manager — study programs id activate",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/forms",
+    "auth": "assistant",
+    "source": "form/formRoutes.ts",
+    "summary": "List forms",
+    "handler": "listForAssistant"
+  },
+  {
+    "method": "POST",
+    "path": "/api/forms",
+    "auth": "assistant",
+    "source": "form/formRoutes.ts",
+    "summary": "Create / execute forms",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/forms/:id",
+    "auth": "assistant",
+    "source": "form/formRoutes.ts",
+    "summary": "Delete forms — id",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/forms/:id",
+    "auth": "assistant",
+    "source": "form/formRoutes.ts",
+    "summary": "Get forms — id",
+    "handler": ""
+  },
+  {
+    "method": "PUT",
+    "path": "/api/forms/:id",
+    "auth": "assistant",
+    "source": "form/formRoutes.ts",
+    "summary": "Update forms — id",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/forms/:id/response-stats",
+    "auth": "assistant",
+    "source": "form/formRoutes.ts",
+    "summary": "List forms — id response stats",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/forms/:id/responses",
+    "auth": "assistant",
+    "source": "form/formRoutes.ts",
+    "summary": "List forms — id responses",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/forms/:id/responses/:responseId",
+    "auth": "assistant",
+    "source": "form/formRoutes.ts",
+    "summary": "Delete forms — id responses responseId",
+    "handler": ""
+  },
+  {
+    "method": "PUT",
+    "path": "/api/forms/:id/responses/:responseId",
+    "auth": "assistant",
+    "source": "form/formRoutes.ts",
+    "summary": "Update forms — id responses responseId",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/forms/public/:token",
+    "auth": "public",
+    "source": "form/formRoutes.ts",
+    "summary": "Get forms — public token",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/forms/public/:token/results",
+    "auth": "public",
+    "source": "form/formRoutes.ts",
+    "summary": "List forms — public token results",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/forms/public/:token/submit",
+    "auth": "public",
+    "source": "form/formRoutes.ts",
+    "summary": "Create / execute forms — public token submit",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/health",
+    "auth": "public",
+    "source": "system/healthRoutes.ts",
+    "summary": "List health",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/health/live",
+    "auth": "public",
+    "source": "system/healthRoutes.ts",
+    "summary": "List health — live",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/health/ready",
+    "auth": "public",
+    "source": "system/healthRoutes.ts",
+    "summary": "List health — ready",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/institutions/admin/chairs",
+    "auth": "super_admin",
+    "source": "admin/adminInstitutionRoutes.ts",
+    "summary": "Create / execute institutions — admin chairs",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/institutions/admin/chairs/:id",
+    "auth": "super_admin",
+    "source": "admin/adminInstitutionRoutes.ts",
+    "summary": "Delete institutions — admin chairs id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/institutions/admin/chairs/:id",
+    "auth": "super_admin",
+    "source": "admin/adminInstitutionRoutes.ts",
+    "summary": "Update institutions — admin chairs id",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/institutions/admin/departments",
+    "auth": "super_admin",
+    "source": "admin/adminInstitutionRoutes.ts",
+    "summary": "Create / execute institutions — admin departments",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/institutions/admin/departments/:deptId/chairs",
+    "auth": "super_admin",
+    "source": "admin/adminInstitutionRoutes.ts",
+    "summary": "List institutions — admin departments deptId chairs",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/institutions/admin/departments/:id",
+    "auth": "super_admin",
+    "source": "admin/adminInstitutionRoutes.ts",
+    "summary": "Delete institutions — admin departments id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/institutions/admin/departments/:id",
+    "auth": "super_admin",
+    "source": "admin/adminInstitutionRoutes.ts",
+    "summary": "Update institutions — admin departments id",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/institutions/admin/faculties",
+    "auth": "super_admin",
+    "source": "admin/adminInstitutionRoutes.ts",
+    "summary": "Create / execute institutions — admin faculties",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/institutions/admin/faculties/:facId/departments",
+    "auth": "super_admin",
+    "source": "admin/adminInstitutionRoutes.ts",
+    "summary": "List institutions — admin faculties facId departments",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/institutions/admin/faculties/:id",
+    "auth": "super_admin",
+    "source": "admin/adminInstitutionRoutes.ts",
+    "summary": "Delete institutions — admin faculties id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/institutions/admin/faculties/:id",
+    "auth": "super_admin",
+    "source": "admin/adminInstitutionRoutes.ts",
+    "summary": "Update institutions — admin faculties id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/institutions/admin/faculties/:id/license",
+    "auth": "super_admin",
+    "source": "admin/adminInstitutionRoutes.ts",
+    "summary": "Update institutions — admin faculties id license",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/institutions/admin/universities",
+    "auth": "super_admin",
+    "source": "admin/adminInstitutionRoutes.ts",
+    "summary": "Create / execute institutions — admin universities",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/institutions/admin/universities/:id",
+    "auth": "super_admin",
+    "source": "admin/adminInstitutionRoutes.ts",
+    "summary": "Delete institutions — admin universities id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/institutions/admin/universities/:id",
+    "auth": "super_admin",
+    "source": "admin/adminInstitutionRoutes.ts",
+    "summary": "Update institutions — admin universities id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/institutions/admin/universities/:id/license",
+    "auth": "super_admin",
+    "source": "admin/adminInstitutionRoutes.ts",
+    "summary": "Update institutions — admin universities id license",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/institutions/departments/:deptId/chairs",
+    "auth": "authenticated",
+    "source": "institution/institutionRoutes.ts",
+    "summary": "List institutions — departments deptId chairs",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/institutions/faculties/:facId/departments",
+    "auth": "authenticated",
+    "source": "institution/institutionRoutes.ts",
+    "summary": "List institutions — faculties facId departments",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/institutions/faculties/:facId/study-programs",
+    "auth": "public",
+    "source": "institution/institutionRoutes.ts",
+    "summary": "List institutions — faculties facId study programs",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/institutions/universities",
+    "auth": "public",
+    "source": "institution/institutionRoutes.ts",
+    "summary": "List institutions — universities",
+    "handler": "getAllUniversities"
+  },
+  {
+    "method": "GET",
+    "path": "/api/institutions/universities/:univId/faculties",
+    "auth": "public",
+    "source": "institution/institutionRoutes.ts",
+    "summary": "List institutions — universities univId faculties",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/knowledge/attempts/:attemptId/draft",
+    "auth": "student",
+    "source": "knowledge/knowledgeRoutes.ts",
+    "summary": "Update knowledge — attempts attemptId draft",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/knowledge/attempts/:attemptId/result",
+    "auth": "student",
+    "source": "knowledge/knowledgeRoutes.ts",
+    "summary": "List knowledge — attempts attemptId result",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/knowledge/attempts/:attemptId/result-assistant",
+    "auth": "assistant",
+    "source": "knowledge/knowledgeRoutes.ts",
+    "summary": "List knowledge — attempts attemptId result assistant",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/knowledge/attempts/:attemptId/submit",
+    "auth": "student",
+    "source": "knowledge/knowledgeRoutes.ts",
+    "summary": "Create / execute knowledge — attempts attemptId submit",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/knowledge/banks/:bankId",
+    "auth": "assistant",
+    "source": "knowledge/bankRoutes.ts",
+    "summary": "Delete knowledge — banks bankId",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/knowledge/banks/:bankId",
+    "auth": "assistant",
+    "source": "knowledge/bankRoutes.ts",
+    "summary": "Get knowledge — banks bankId",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/knowledge/banks/:bankId",
+    "auth": "assistant",
+    "source": "knowledge/bankRoutes.ts",
+    "summary": "Update knowledge — banks bankId",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/knowledge/banks/:bankId/draw-by-distribution",
+    "auth": "assistant",
+    "source": "knowledge/bankRoutes.ts",
+    "summary": "Create / execute knowledge — banks bankId draw by distribution",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/knowledge/banks/:bankId/questions",
+    "auth": "assistant",
+    "source": "knowledge/bankRoutes.ts",
+    "summary": "List knowledge — banks bankId questions",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/knowledge/banks/:bankId/questions",
+    "auth": "assistant",
+    "source": "knowledge/bankRoutes.ts",
+    "summary": "Create / execute knowledge — banks bankId questions",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/knowledge/banks/:bankId/questions/:questionId",
+    "auth": "assistant",
+    "source": "knowledge/bankRoutes.ts",
+    "summary": "Delete knowledge — banks bankId questions questionId",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/knowledge/banks/:bankId/questions/:questionId",
+    "auth": "assistant",
+    "source": "knowledge/bankRoutes.ts",
+    "summary": "Update knowledge — banks bankId questions questionId",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/knowledge/banks/:bankId/questions/bulk",
+    "auth": "assistant",
+    "source": "knowledge/bankRoutes.ts",
+    "summary": "Create / execute knowledge — banks bankId questions bulk",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/knowledge/banks/:bankId/random",
+    "auth": "assistant",
+    "source": "knowledge/bankRoutes.ts",
+    "summary": "List knowledge — banks bankId random",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/knowledge/banks/:bankId/tags",
+    "auth": "assistant",
+    "source": "knowledge/bankRoutes.ts",
+    "summary": "List knowledge — banks bankId tags",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/knowledge/banks/:bankId/tags",
+    "auth": "assistant",
+    "source": "knowledge/bankRoutes.ts",
+    "summary": "Create / execute knowledge — banks bankId tags",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/knowledge/banks/subject/:subjectId",
+    "auth": "assistant",
+    "source": "knowledge/bankRoutes.ts",
+    "summary": "Get knowledge — banks subject subjectId",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/knowledge/banks/subject/:subjectId",
+    "auth": "assistant",
+    "source": "knowledge/bankRoutes.ts",
+    "summary": "Create / execute knowledge — banks subject subjectId",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/knowledge/practical/:activityId",
+    "auth": "assistant",
+    "source": "knowledge/practicalRoutes.ts",
+    "summary": "Delete knowledge — practical activityId",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/knowledge/practical/:activityId",
+    "auth": "authenticated",
+    "source": "knowledge/practicalRoutes.ts",
+    "summary": "Get knowledge — practical activityId",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/knowledge/practical/:activityId",
+    "auth": "assistant",
+    "source": "knowledge/practicalRoutes.ts",
+    "summary": "Update knowledge — practical activityId",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/knowledge/practical/:activityId/attachments",
+    "auth": "assistant",
+    "source": "knowledge/practicalRoutes.ts",
+    "summary": "Create / execute knowledge — practical activityId attachments",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/knowledge/practical/:activityId/attachments/:attachmentId",
+    "auth": "assistant",
+    "source": "knowledge/practicalRoutes.ts",
+    "summary": "Delete knowledge — practical activityId attachments attachmentId",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/knowledge/practical/:activityId/my-submission",
+    "auth": "student",
+    "source": "knowledge/practicalSubmissionRoutes.ts",
+    "summary": "List knowledge — practical activityId my submission",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/knowledge/practical/:activityId/submissions",
+    "auth": "assistant",
+    "source": "knowledge/practicalSubmissionRoutes.ts",
+    "summary": "List knowledge — practical activityId submissions",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/knowledge/practical/:activityId/submit",
+    "auth": "student",
+    "source": "knowledge/practicalSubmissionRoutes.ts",
+    "summary": "Create / execute knowledge — practical activityId submit",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/knowledge/practical/:activityId/submit/:fileId",
+    "auth": "student",
+    "source": "knowledge/practicalSubmissionRoutes.ts",
+    "summary": "Delete knowledge — practical activityId submit fileId",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/knowledge/practical/attachments/:attachmentId/download",
+    "auth": "authenticated",
+    "source": "knowledge/practicalRoutes.ts",
+    "summary": "List knowledge — practical attachments attachmentId download",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/knowledge/practical/subject/:subjectId",
+    "auth": "authenticated",
+    "source": "knowledge/practicalRoutes.ts",
+    "summary": "Get knowledge — practical subject subjectId",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/knowledge/practical/subject/:subjectId",
+    "auth": "assistant",
+    "source": "knowledge/practicalRoutes.ts",
+    "summary": "Create / execute knowledge — practical subject subjectId",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/knowledge/practical/submission-files/:fileId/download",
+    "auth": "authenticated",
+    "source": "knowledge/practicalSubmissionRoutes.ts",
+    "summary": "List knowledge — practical submission files fileId download",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/knowledge/practical/submissions/:submissionId/grade",
+    "auth": "assistant",
+    "source": "knowledge/practicalSubmissionRoutes.ts",
+    "summary": "Update knowledge — practical submissions submissionId grade",
+    "handler": ""
+  },
+  {
+    "method": "PUT",
+    "path": "/api/knowledge/questions/:questionId/tags",
+    "auth": "assistant",
+    "source": "knowledge/knowledgeRoutes.ts",
+    "summary": "Update knowledge — questions questionId tags",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/knowledge/quizzes/:quizId",
+    "auth": "assistant",
+    "source": "knowledge/quizRoutes.ts",
+    "summary": "Delete knowledge — quizzes quizId",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/knowledge/quizzes/:quizId",
+    "auth": "authenticated",
+    "source": "knowledge/quizRoutes.ts",
+    "summary": "Get knowledge — quizzes quizId",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/knowledge/quizzes/:quizId",
+    "auth": "assistant",
+    "source": "knowledge/quizRoutes.ts",
+    "summary": "Update knowledge — quizzes quizId",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/knowledge/quizzes/:quizId/my-attempts",
+    "auth": "student",
+    "source": "knowledge/quizRoutes.ts",
+    "summary": "List knowledge — quizzes quizId my attempts",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/knowledge/quizzes/:quizId/question-stats",
+    "auth": "assistant",
+    "source": "knowledge/quizRoutes.ts",
+    "summary": "List knowledge — quizzes quizId question stats",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/knowledge/quizzes/:quizId/results",
+    "auth": "assistant",
+    "source": "knowledge/quizRoutes.ts",
+    "summary": "List knowledge — quizzes quizId results",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/knowledge/quizzes/:quizId/start",
+    "auth": "student",
+    "source": "knowledge/quizRoutes.ts",
+    "summary": "Create / execute knowledge — quizzes quizId start",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/knowledge/quizzes/subject/:subjectId",
+    "auth": "authenticated",
+    "source": "knowledge/quizRoutes.ts",
+    "summary": "Get knowledge — quizzes subject subjectId",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/knowledge/quizzes/subject/:subjectId",
+    "auth": "assistant",
+    "source": "knowledge/quizRoutes.ts",
+    "summary": "Create / execute knowledge — quizzes subject subjectId",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/knowledge/tags/:tagId",
+    "auth": "assistant",
+    "source": "knowledge/knowledgeRoutes.ts",
+    "summary": "Delete knowledge — tags tagId",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/maintenance/start",
+    "auth": "super_admin",
+    "source": "system/maintenanceRoutes.ts",
+    "summary": "Create / execute maintenance — start",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/maintenance/status",
+    "auth": "public",
+    "source": "system/maintenanceRoutes.ts",
+    "summary": "List maintenance — status",
+    "handler": "getState"
+  },
+  {
+    "method": "POST",
+    "path": "/api/maintenance/stop",
+    "auth": "super_admin",
+    "source": "system/maintenanceRoutes.ts",
+    "summary": "Create / execute maintenance — stop",
+    "handler": "stop"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/materials/:id",
+    "auth": "assistant",
+    "source": "material/materialRoutes.ts",
+    "summary": "Delete materials — id",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/materials/:id",
+    "auth": "authenticated",
+    "source": "material/materialRoutes.ts",
+    "summary": "Get materials — id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/materials/:id",
+    "auth": "assistant",
+    "source": "material/materialRoutes.ts",
+    "summary": "Update materials — id",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/materials/:id/attachments",
+    "auth": "assistant",
+    "source": "material/materialRoutes.ts",
+    "summary": "Create / execute materials — id attachments",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/materials/:id/attachments/:attachmentId",
+    "auth": "assistant",
+    "source": "material/materialRoutes.ts",
+    "summary": "Delete materials — id attachments attachmentId",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/materials/:id/public-token",
+    "auth": "assistant",
+    "source": "material/materialRoutes.ts",
+    "summary": "Delete materials — id public token",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/materials/:id/public-token",
+    "auth": "assistant",
+    "source": "material/materialRoutes.ts",
+    "summary": "List materials — id public token",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/materials/:id/public-token",
+    "auth": "assistant",
+    "source": "material/materialRoutes.ts",
+    "summary": "Create / execute materials — id public token",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/materials/attachments/:attachmentId/download",
+    "auth": "authenticated",
+    "source": "material/materialRoutes.ts",
+    "summary": "List materials — attachments attachmentId download",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/materials/reorder",
+    "auth": "assistant",
+    "source": "material/materialRoutes.ts",
+    "summary": "Create / execute materials — reorder",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/materials/subject/:subjectId",
+    "auth": "authenticated",
+    "source": "material/materialRoutes.ts",
+    "summary": "Get materials — subject subjectId",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/materials/subject/:subjectId",
+    "auth": "assistant",
+    "source": "material/materialRoutes.ts",
+    "summary": "Create / execute materials — subject subjectId",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/materials/subject/:subjectId/grouped",
+    "auth": "authenticated",
+    "source": "material/materialRoutes.ts",
+    "summary": "List materials — subject subjectId grouped",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/news",
+    "auth": "super_admin",
+    "source": "news/newsRoutes.ts",
+    "summary": "List news",
+    "handler": "listAll"
+  },
+  {
+    "method": "POST",
+    "path": "/api/news",
+    "auth": "super_admin",
+    "source": "news/newsRoutes.ts",
+    "summary": "Create / execute news",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/news/:id",
+    "auth": "super_admin",
+    "source": "news/newsRoutes.ts",
+    "summary": "Delete news — id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/news/:id",
+    "auth": "super_admin",
+    "source": "news/newsRoutes.ts",
+    "summary": "Update news — id",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/news/public",
+    "auth": "public",
+    "source": "news/newsRoutes.ts",
+    "summary": "List news — public",
+    "handler": "listPublic"
+  },
+  {
+    "method": "GET",
+    "path": "/api/notifications",
+    "auth": "student",
+    "source": "notification/notificationRoutes.ts",
+    "summary": "List notifications",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/notifications/:id/read",
+    "auth": "student",
+    "source": "notification/notificationRoutes.ts",
+    "summary": "Update notifications — id read",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/notifications/read-all",
+    "auth": "student",
+    "source": "notification/notificationRoutes.ts",
+    "summary": "Create / execute notifications — read all",
+    "handler": "markAllRead"
+  },
+  {
+    "method": "POST",
+    "path": "/api/notifications/send",
+    "auth": "assistant",
+    "source": "notification/notificationRoutes.ts",
+    "summary": "Create / execute notifications — send",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/notifications/unread-count",
+    "auth": "student",
+    "source": "notification/notificationRoutes.ts",
+    "summary": "List notifications — unread count",
+    "handler": "getUnreadCount"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/posts/:id",
+    "auth": "assistant",
+    "source": "post/postRoutes.ts",
+    "summary": "Delete posts — id",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/posts/:id",
+    "auth": "authenticated",
+    "source": "post/postRoutes.ts",
+    "summary": "Get posts — id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/posts/:id",
+    "auth": "assistant",
+    "source": "post/postRoutes.ts",
+    "summary": "Update posts — id",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/posts/:id/attachments",
+    "auth": "assistant",
+    "source": "post/postRoutes.ts",
+    "summary": "Create / execute posts — id attachments",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/posts/:id/attachments/:attachmentId",
+    "auth": "assistant",
+    "source": "post/postRoutes.ts",
+    "summary": "Delete posts — id attachments attachmentId",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/posts/attachments/:attachmentId/download",
+    "auth": "authenticated",
+    "source": "post/postRoutes.ts",
+    "summary": "List posts — attachments attachmentId download",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/posts/subject/:subjectId",
+    "auth": "authenticated",
+    "source": "post/postRoutes.ts",
+    "summary": "Get posts — subject subjectId",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/posts/subject/:subjectId",
+    "auth": "assistant",
+    "source": "post/postRoutes.ts",
+    "summary": "Create / execute posts — subject subjectId",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/public/materials/:token",
+    "auth": "public",
+    "source": "material/materialPublicRoutes.ts",
+    "summary": "Get public — materials token",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/reports/monthly",
+    "auth": "assistant",
+    "source": "report/reportRoutes.ts",
+    "summary": "List reports — monthly",
+    "handler": "buildReport"
+  },
+  {
+    "method": "GET",
+    "path": "/api/reports/weekly",
+    "auth": "assistant",
+    "source": "report/reportRoutes.ts",
+    "summary": "List reports — weekly",
+    "handler": "buildReport"
+  },
+  {
+    "method": "GET",
+    "path": "/api/score-sheets",
+    "auth": "assistant",
+    "source": "scoresheet/scoreSheetRoutes.ts",
+    "summary": "List score sheets",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/score-sheets",
+    "auth": "assistant",
+    "source": "scoresheet/scoreSheetRoutes.ts",
+    "summary": "Create / execute score sheets",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/score-sheets/:id",
+    "auth": "assistant",
+    "source": "scoresheet/scoreSheetRoutes.ts",
+    "summary": "Delete score sheets — id",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/score-sheets/:id",
+    "auth": "assistant",
+    "source": "scoresheet/scoreSheetRoutes.ts",
+    "summary": "Get score sheets — id",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/score-sheets/:id/columns",
+    "auth": "assistant",
+    "source": "scoresheet/scoreSheetRoutes.ts",
+    "summary": "Create / execute score sheets — id columns",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/score-sheets/:id/columns/reorder",
+    "auth": "assistant",
+    "source": "scoresheet/scoreSheetRoutes.ts",
+    "summary": "Create / execute score sheets — id columns reorder",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/score-sheets/:id/import-students",
+    "auth": "assistant",
+    "source": "scoresheet/scoreSheetRoutes.ts",
+    "summary": "Create / execute score sheets — id import students",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/score-sheets/:id/lock",
+    "auth": "assistant",
+    "source": "scoresheet/scoreSheetRoutes.ts",
+    "summary": "Update score sheets — id lock",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/score-sheets/:id/rename",
+    "auth": "assistant",
+    "source": "scoresheet/scoreSheetRoutes.ts",
+    "summary": "Update score sheets — id rename",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/score-sheets/:id/restore-snapshot",
+    "auth": "assistant",
+    "source": "scoresheet/scoreSheetRoutes.ts",
+    "summary": "Create / execute score sheets — id restore snapshot",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/score-sheets/:id/rows",
+    "auth": "assistant",
+    "source": "scoresheet/scoreSheetRoutes.ts",
+    "summary": "Create / execute score sheets — id rows",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/score-sheets/:id/unlock",
+    "auth": "assistant",
+    "source": "scoresheet/scoreSheetRoutes.ts",
+    "summary": "Update score sheets — id unlock",
+    "handler": ""
+  },
+  {
+    "method": "PUT",
+    "path": "/api/score-sheets/cells",
+    "auth": "assistant",
+    "source": "scoresheet/scoreSheetRoutes.ts",
+    "summary": "Update score sheets — cells",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/score-sheets/columns/:colId",
+    "auth": "assistant",
+    "source": "scoresheet/scoreSheetRoutes.ts",
+    "summary": "Delete score sheets — columns colId",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/score-sheets/columns/:colId",
+    "auth": "assistant",
+    "source": "scoresheet/scoreSheetRoutes.ts",
+    "summary": "Update score sheets — columns colId",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/score-sheets/rows/:rowId",
+    "auth": "assistant",
+    "source": "scoresheet/scoreSheetRoutes.ts",
+    "summary": "Delete score sheets — rows rowId",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/score-sheets/student/sheet/:sheetId",
+    "auth": "student",
+    "source": "scoresheet/scoreSheetRoutes.ts",
+    "summary": "Get score sheets — student sheet sheetId",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/score-sheets/student/subjects",
+    "auth": "student",
+    "source": "scoresheet/scoreSheetRoutes.ts",
+    "summary": "List score sheets — student subjects",
+    "handler": "listSubjectsWithSheetsForStudent"
+  },
+  {
+    "method": "POST",
+    "path": "/api/score-sheets/transfer",
+    "auth": "assistant",
+    "source": "scoresheet/scoreSheetRoutes.ts",
+    "summary": "Create / execute score sheets — transfer",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/sessions",
+    "auth": "assistant",
+    "source": "session/sessionRoutes.ts",
+    "summary": "List sessions",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/sessions/:id",
+    "auth": "assistant",
+    "source": "session/sessionRoutes.ts",
+    "summary": "Delete sessions — id",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/sessions/active",
+    "auth": "assistant",
+    "source": "session/sessionRoutes.ts",
+    "summary": "List sessions — active",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/sessions/generate",
+    "auth": "assistant",
+    "source": "session/sessionRoutes.ts",
+    "summary": "Create / execute sessions — generate",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/sessions/invalidate",
+    "auth": "assistant",
+    "source": "session/sessionRoutes.ts",
+    "summary": "Create / execute sessions — invalidate",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/sessions/rotate/:id",
+    "auth": "assistant",
+    "source": "session/sessionRoutes.ts",
+    "summary": "Create / execute sessions — rotate id",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/sessions/student",
+    "auth": "student",
+    "source": "session/sessionRoutes.ts",
+    "summary": "List sessions — student",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/status",
+    "auth": "public",
+    "source": "system/statusRoutes.ts",
+    "summary": "List status",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/status/admin/incidents",
+    "auth": "super_admin",
+    "source": "admin/adminIncidentRoutes.ts",
+    "summary": "List status — admin incidents",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/status/admin/incidents",
+    "auth": "super_admin",
+    "source": "admin/adminIncidentRoutes.ts",
+    "summary": "Create / execute status — admin incidents",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/status/admin/incidents/:id",
+    "auth": "super_admin",
+    "source": "admin/adminIncidentRoutes.ts",
+    "summary": "Delete status — admin incidents id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/status/admin/incidents/:id",
+    "auth": "super_admin",
+    "source": "admin/adminIncidentRoutes.ts",
+    "summary": "Update status — admin incidents id",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/status/admin/incidents/:id/updates",
+    "auth": "super_admin",
+    "source": "admin/adminIncidentRoutes.ts",
+    "summary": "Create / execute status — admin incidents id updates",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/status/admin/updates/:id",
+    "auth": "super_admin",
+    "source": "admin/adminIncidentRoutes.ts",
+    "summary": "Delete status — admin updates id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/status/admin/updates/:id",
+    "auth": "super_admin",
+    "source": "admin/adminIncidentRoutes.ts",
+    "summary": "Update status — admin updates id",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/status/uptime",
+    "auth": "public",
+    "source": "system/statusRoutes.ts",
+    "summary": "List status — uptime",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/students",
+    "auth": "assistant",
+    "source": "student/studentRoutes.ts",
+    "summary": "List students",
+    "handler": ""
+  },
+  {
+    "method": "PUT",
+    "path": "/api/students/:id",
+    "auth": "assistant",
+    "source": "student/studentRoutes.ts",
+    "summary": "Update students — id",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/students/me",
+    "auth": "student",
+    "source": "student/studentRoutes.ts",
+    "summary": "List students — me",
+    "handler": "getProfile"
+  },
+  {
+    "method": "GET",
+    "path": "/api/students/pending",
+    "auth": "assistant",
+    "source": "student/studentRoutes.ts",
+    "summary": "List students — pending",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/subjects",
+    "auth": "authenticated",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "List subjects",
+    "handler": "getAll"
+  },
+  {
+    "method": "POST",
+    "path": "/api/subjects",
+    "auth": "assistant",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "Create / execute subjects",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/subjects/:id",
+    "auth": "assistant",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "Delete subjects — id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/subjects/:id",
+    "auth": "assistant",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "Update subjects — id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/subjects/:id/activate",
+    "auth": "assistant",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "Update subjects — id activate",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/subjects/:id/assistants",
+    "auth": "assistant",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "List subjects — id assistants",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/subjects/:id/assistants",
+    "auth": "assistant",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "Create / execute subjects — id assistants",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/subjects/:id/assistants/:assistantId",
+    "auth": "assistant",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "Delete subjects — id assistants assistantId",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/subjects/:id/enroll",
+    "auth": "assistant",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "Create / execute subjects — id enroll",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/subjects/:id/enroll-bulk",
+    "auth": "assistant",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "Create / execute subjects — id enroll bulk",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/subjects/:id/enroll/:studentId",
+    "auth": "assistant",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "Delete subjects — id enroll studentId",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/subjects/:id/self-enroll",
+    "auth": "student",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "Delete subjects — id self enroll",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/subjects/:id/self-enroll",
+    "auth": "student",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "Create / execute subjects — id self enroll",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/subjects/:id/students",
+    "auth": "assistant",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "List subjects — id students",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/subjects/:subjectId/available-students",
+    "auth": "assistant",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "List subjects — subjectId available students",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/subjects/browsable",
+    "auth": "student",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "List subjects — browsable",
+    "handler": "getBrowsableSubjects"
+  },
+  {
+    "method": "GET",
+    "path": "/api/subjects/enrolled",
+    "auth": "authenticated",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "List subjects — enrolled",
+    "handler": "getStudentSubjects"
+  },
+  {
+    "method": "GET",
+    "path": "/api/subjects/my",
+    "auth": "assistant",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "List subjects — my",
+    "handler": "getMySubjects"
+  },
+  {
+    "method": "GET",
+    "path": "/api/subjects/my/inactive",
+    "auth": "assistant",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "List subjects — my inactive",
+    "handler": "getInactiveSubjects"
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/subjects/reorder",
+    "auth": "assistant",
+    "source": "subject/subjectRoutes.ts",
+    "summary": "Update subjects — reorder",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/todos",
+    "auth": "assistant",
+    "source": "todo/todoRoutes.ts",
+    "summary": "List todos",
+    "handler": "list"
+  },
+  {
+    "method": "POST",
+    "path": "/api/todos",
+    "auth": "assistant",
+    "source": "todo/todoRoutes.ts",
+    "summary": "Create / execute todos",
+    "handler": ""
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/todos/:id",
+    "auth": "assistant",
+    "source": "todo/todoRoutes.ts",
+    "summary": "Delete todos — id",
+    "handler": ""
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/todos/:id",
+    "auth": "assistant",
+    "source": "todo/todoRoutes.ts",
+    "summary": "Update todos — id",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/versions",
+    "auth": "assistant",
+    "source": "scoresheet/scoresheetVersionRoutes.ts",
+    "summary": "List versions",
+    "handler": ""
+  },
+  {
+    "method": "POST",
+    "path": "/api/versions",
+    "auth": "assistant",
+    "source": "scoresheet/scoresheetVersionRoutes.ts",
+    "summary": "Create / execute versions",
+    "handler": ""
+  },
+  {
+    "method": "GET",
+    "path": "/api/versions/:id",
+    "auth": "assistant",
+    "source": "scoresheet/scoresheetVersionRoutes.ts",
+    "summary": "Get versions — id",
+    "handler": ""
+  }
+]
