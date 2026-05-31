@@ -12,7 +12,7 @@ export default defineConfig({
   lastUpdated: true,
   ignoreDeadLinks: false,
   themeConfig: {
-    logo: `${base}logo.svg`,
+    logo: { src: '/logo.svg', alt: 'Tapiz Docs' },
     search: { provider: 'local' },
     nav: [
       { text: 'Home', link: '/' },

@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { withBase } from 'vitepress'
+</script>
+
 <template>
   <section class="tapiz-hero" aria-labelledby="tapiz-portal-title">
     <div class="tapiz-hero__inner">
@@ -13,7 +17,7 @@
       </p>
 
       <div class="tapiz-cards" aria-label="Documentation sections">
-        <a class="tapiz-card" href="/api/">
+        <a class="tapiz-card" :href="withBase('/api/')">
           <span class="tapiz-card__kicker">Technical documentation</span>
           <h2>API Docs</h2>
           <p>
@@ -22,7 +26,7 @@
           <span class="tapiz-card__footer">Open API docs →</span>
         </a>
 
-        <a class="tapiz-card" href="/manual/">
+        <a class="tapiz-card" :href="withBase('/manual/')">
           <span class="tapiz-card__kicker">End-user documentation</span>
           <h2>User Manual</h2>
           <p>
